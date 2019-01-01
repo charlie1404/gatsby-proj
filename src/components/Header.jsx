@@ -24,7 +24,7 @@ const HeaderNavigation = styled.nav`
 const StyledLink = styled(Link)`
   flex: 1 0 0;
   text-align: center;
-  text-transform: ${props => (props.uppercase ? 'uppercase': 'unset')};
+  text-transform: ${props => (props.uppercase ? 'uppercase' : 'unset')};
 `;
 
 const Header = (data) => {
@@ -34,7 +34,7 @@ const Header = (data) => {
         <Img
           alt="logo"
           title="The Bag Store"
-          fixed={data.logoSrc}
+          fixed={data.logoSrc || {}}
         />
       </BrandLogo>
       <HeaderNavigation>
